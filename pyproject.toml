@@ -1,0 +1,20 @@
+[project]
+name = "digit-classifier"
+version = "0.1.0"
+description = "MNIST Digit Classifier"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "lightning>=2.6.6",
+    "numpy>=2.4.6",
+    "pillow>=12.3.0",
+    "scikit-learn>=1.9.1",
+    "torch>=2.14.1",
+]
+[project.scripts]
+digit-classifier = "digit_classifier.__main__:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
